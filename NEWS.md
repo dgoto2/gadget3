@@ -1,4 +1,4 @@
-# gadget3 0.14-0-999:
+# gadget3 0.15-0:
 
 ## Bug fixes
 * g3_tmb_relist() was double exp()ing fixed parameters #260

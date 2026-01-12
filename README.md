@@ -36,7 +36,8 @@ You can also install the latest development version from github:
 
 ## Documentation
 
-The gadget3 documentation is [published online](https://gadget-framework.github.io/gadget3/).
+The gadget3 documentation is available at: https://gadget-framework.github.io/gadget3/
+
 To get started, read the [introductory vignette](https://gadget-framework.github.io/gadget3/articles/introduction-single-stock.html),
 which walks through the process of building a model.
 
@@ -48,7 +49,7 @@ look in the [gadget-models](https://github.com/gadget-framework/gadget-models/) 
 
 ## Development of gadget3
 
-The documentation for the latest development version is [published online](https://gadget-framework.github.io/gadget3/master/).
+The documentation for the latest development version is available at: https://gadget-framework.github.io/gadget3-master/
 
 You can install it with:
 

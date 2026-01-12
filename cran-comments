@@ -1,4 +1,28 @@
+# make release NEW_VERSION=0.x-0
 # https://cran.r-project.org/submit.html
+
+==== 0.15-0
+
+New release of existing package.
+
+> Found the following (possibly) invalid URLs:
+>   URL: https://core.ac.uk/download/pdf/225936648.pdf (moved to https://files01.core.ac.uk/download/pdf/225936648.pdf)
+>     From: DESCRIPTION
+>     Status: 301
+>     Message: Moved Permanently
+> For content that is 'Moved Permanently', please change http to https,
+> add trailing slashes, or replace the old by the new URL.
+
+I'm assuming that this is a misconfiguration of core.ac.uk rather than an intentional permanent redirect.
+
+Differences since the previous submission:
+
+  https://github.com/gadget-framework/gadget3/blob/v0.15-0/NEWS.md
+  https://github.com/gadget-framework/gadget3/compare/v0.14-1...v0.15-0
+
+CI test reports can be found here:
+
+  https://github.com/gadget-framework/gadget3/actions/runs/20894585200
 
 ==== 0.14-0
 

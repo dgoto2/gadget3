@@ -38,6 +38,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_branch: gh-pages
+          external_repository: gadget-framework/gadget-framework.github.io
+          publish_branch: master
           publish_dir: ./docs/dev
-          destination_dir: ./${{ github.ref_name }}
+          destination_dir: ./gadget3-${{ github.ref_name }}

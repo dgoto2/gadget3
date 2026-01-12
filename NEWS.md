@@ -1,5 +1,3 @@
-# gadget3 0.15-0-999:
-
 # gadget3 0.15-0:
 
 ## Bug fixes

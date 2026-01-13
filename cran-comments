@@ -1,6 +1,25 @@
 # make release NEW_VERSION=0.x-0
 # https://cran.r-project.org/submit.html
 
+==== 0.15-1
+
+Re-release to fix following NOTEs
+
+> Found the following (possibly) invalid URLs:
+>   URL: https://core.ac.uk/download/pdf/225936648.pdf (moved to https://files01.core.ac.uk/download/pdf/225936648.pdf)
+>     From: DESCRIPTION
+>     Status: 301
+>     Message: Moved Permanently
+
+This is highly-likely to be a false positive, but updated anyway.
+
+>   URL: https://gadget-framework.github.io/gadget3/master/
+>     From: README.md
+>     Status: 404
+
+pretest checks managed to hit site after a publishing error. Used the prompt to
+restructure how the dev/production sites are built to avoid this.
+
 ==== 0.15-0
 
 New release of existing package.

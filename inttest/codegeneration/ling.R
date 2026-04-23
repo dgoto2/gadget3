@@ -73,7 +73,7 @@ structure(function (param = parameter_template)
     }
     dif_pmax <- function(a, b, scale) {
         logspace_add <- function(a, b) pmax(a, b) + log1p(exp(pmin(a, b) - pmax(a, b)))
-        b <- as.vector(b)
+        dim(b) <- NULL
         logspace_add(a * scale, b * scale)/scale
     }
     avoid_zero <- function(a) {
@@ -101,13 +101,15 @@ structure(function (param = parameter_template)
         return(if (is.null(out)) def else out)
     }
     nonconform_add <- function(base_ar, extra_ar) {
-        base_ar + as.vector(extra_ar)
+        dim(extra_ar) <- NULL
+        base_ar + extra_ar
     }
     dif_pmin <- function(a, b, scale) {
         dif_pmax(a, b, -scale)
     }
     nonconform_mult <- function(base_ar, extra_ar) {
-        base_ar * as.vector(extra_ar)
+        dim(extra_ar) <- NULL
+        base_ar * extra_ar
     }
     growth_bbinom <- function(delt_l, binn, beta) {
         alpha <- (beta * delt_l)/(binn - delt_l)
@@ -165,8 +167,10 @@ structure(function (param = parameter_template)
     }
     g3a_grow_apply <- function(growth.matrix, wgt.matrix, input_num, input_wgt) {
         na <- dim(growth.matrix)[[1]]
-        growth.matrix <- growth.matrix * as.vector(input_num)
-        wgt.matrix <- growth.matrix * (wgt.matrix + as.vector(input_wgt))
+        dim(input_num) <- NULL
+        dim(input_wgt) <- NULL
+        growth.matrix <- growth.matrix * input_num
+        wgt.matrix <- growth.matrix * (wgt.matrix + input_wgt)
         growth.matrix.sum <- colSums(growth.matrix)
         return(array(c(growth.matrix.sum, colSums(wgt.matrix)/avoid_zero(growth.matrix.sum)), dim = c(na, 2)))
     }

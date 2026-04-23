@@ -14,7 +14,7 @@ Description: A framework to assist creation of marine ecosystem models,
              reproduce gadget2 models in 'TMB', but can be extended beyond
              gadget2's capabilities.
              Kasper Kristensen, Anders Nielsen, Casper W. Berg, Hans Skaug, Bradley M. Bell (2016) <doi:10.18637/jss.v070.i05> "TMB: Automatic Differentiation and Laplace Approximation.".
-             Begley, J., & Howell, D. (2004) <https://files01.core.ac.uk/download/pdf/225936648.pdf> "An overview of Gadget, the globally applicable area-disaggregated general ecosystem toolbox. ICES.".
+             Begley, J., & Howell, D. (2004) <doi:10.17895/ices.pub.25349308> "An overview of Gadget, the globally applicable area-disaggregated general ecosystem toolbox. ICES.".
 URL: https://gadget-framework.github.io/gadget3/, https://github.com/gadget-framework/gadget3/
 Encoding: UTF-8
 Depends: R (>= 4.2.0)
